@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHS Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: #ffffff !important;
+        }
+
+        .nav-link:hover {
+            color: #ced4da !important;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+        }
+
+        .footer a {
+            color: #ffffff !important;
+        }
+
+        .footer a:hover {
+            color: #ced4da !important;
+        }
+
+        .content-section {
+            margin-top: 40px;
+        }
+
+        .content-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .content-text {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .content-img {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="/visitor/">방명록홈</a>
+                    <a class="nav-link" href="/visitor/visitor_list">리스트</a>
+                    <a class="nav-link" href="/visigor_visitor_create">추가</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Content -->
+    <div class="container content-section">
+        <h1 class="text-center mb-5">Welcome to KHS Page</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Django 기반의 간단한 3Tier 페이지 <br>입니다!</h2>
+                        <p class="card-text">인프라는 다음과 같은 구조를 가지고 있습니다.</p>
+                        <img src="static\visitor\3tier.drawio.png" alt="3Tier" class="card-img-top">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">WEB-Tier : Nginx<br>정적 웹 페이지 호스팅 </h2>
+                        <p class="card-text">현재 위치는 그림과 같습니다.</p>
+                        <img src="static\visitor\web.drawio.png" alt="WEB Tier" class="card-img-top">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Instance Information -->
+        <div class="mt-5">
+            <h2 class="text-center mb-4">현재 인스턴스 정보</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>Instance ID:</strong> $INSTANCE_ID</li>
+                        <li class="list-group-item"><strong>Availability Zone:</strong> $AVAILABILITY_ZONE</li>
+                        <li class="list-group-item"><strong>Subnet ID:</strong> $SUBNET_ID</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Instance Information -->
+    </div>
+
+    <!-- Content -->
+
+    <!-- Footer -->
+    <footer class="footer py-3">
+        <div class="container">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="/" class="nav-link px-2">Home</a></li>
+                <li class="nav-item"><a href="https://wiwtd.tistory.com/" class="nav-link px-2">Blog</a></li>
+                <li class="nav-item"><a
+                        href="https://spotty-snowman-503.notion.site/Django-7399016f0bc04ec09e642debb78ee229?pvs=4"
+                        class="nav-link px-2">Notion</a></li>
+                <li class="nav-item"><a href="https://github.com/KimHyoSeob" class="nav-link px-2">GitHub</a></li>
+            </ul>
+            <p class="text-center">&copy; 2024 Made By KHS</p>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
